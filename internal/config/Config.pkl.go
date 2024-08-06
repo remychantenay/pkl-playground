@@ -22,6 +22,15 @@ type Config struct {
 
 	// Components is a map of components.
 	Components any `pkl:"components"`
+
+	// FullList is a list of integers.
+	FullList any `pkl:"fullList"`
+
+	// Multiplied contains the elements of fullList * 2.
+	Multiplied any `pkl:"multiplied"`
+
+	// Filtered contains the elements of fullList * 2.
+	Filtered any `pkl:"filtered"`
 }
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a Config

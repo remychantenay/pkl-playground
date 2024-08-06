@@ -42,3 +42,16 @@ components = new Mapping<String, String> {
   ["C1"] = "58c2ef10-b7c3-46e6-a757-4217c60e2ce8"
   ["C2"] = "5c819cbd-9db1-4425-98e7-ea77742a9fa9"
 }
+
+/// mult multiplies a by b.
+function mult(a: Int, b: Int) =
+  a * b
+
+/// FullList is a list of integers.
+fullList = List(1, 2, 3, 4, 5)
+
+/// Multiplied contains the elements of fullList * 2.
+multiplied = fullList.map((i) -> mult(i, 2))
+
+/// Filtered contains the elements of fullList filtered.
+filtered = fullList.filter((i) -> i == 3 || i == 5)
