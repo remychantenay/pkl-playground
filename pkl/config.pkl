@@ -1,0 +1,42 @@
+@go.Package { name = "github.com/remychantenay/pkl-playground/internal/config" }
+module remychantenay.pkl_playground.internal.config
+
+import "package://pkg.pkl-lang.org/pkl-go/pkl.golang@0.8.0#/go.pkl"
+
+/// Something is just a simple integer.
+something: Int = 42
+
+/// somethingElse is a simple string.
+somethingElse: String = "42"
+
+/// Kind is an "enum" type.
+typealias Kind = "floating" | "fixed"
+
+// Window is a class that holds window information.
+class Window {
+  /// Width is the width of the entire window.
+  width: Float(this >= 1400.0) = 1400.0
+
+  /// Height is the eight of the entire window.
+  height: Float(this >= 700.0) = 700.0
+
+  /// Elevation is the elevation of the window.
+  /// Nullable.
+  elevation: Int? = null
+
+  /// Kind is the kind of window.
+  kind: Kind = "floating"
+
+  /// Tabs  contains the list of tabs.
+  local tabs = new Listing<String> {
+    "tab_one"
+    "tab_two"
+  }
+}
+
+/// window contains the window configuration.
+window: Window
+
+// ######################################
+// Types                                #
+// ######################################

@@ -1,0 +1,6 @@
+something: 42
+somethingElse: '42'
+window:
+  width: 1400.0
+  height: 700.0
+  kind: floating
