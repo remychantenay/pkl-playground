@@ -22,6 +22,6 @@ func loadConfig() {
 	println(fmt.Sprintf("Tabs (list): %v", cfg.Tabs))
 	println(fmt.Sprintf("Components (map): %v", cfg.Components))
 	println(fmt.Sprintf("FullList (list): %v", cfg.FullList))
-	println(fmt.Sprintf("Multiplied (list): %v", cfg.Multiplied))
-	println(fmt.Sprintf("Filtered (list): %v", cfg.Filtered))
+	println(fmt.Sprintf("Multiplied (list): %v", cfg.MultipliedList))
+	println(fmt.Sprintf("Filtered (list): %v", cfg.FilteredList))
 }

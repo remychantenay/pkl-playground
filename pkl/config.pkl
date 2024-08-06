@@ -50,8 +50,8 @@ function mult(a: Int, b: Int) =
 /// FullList is a list of integers.
 fullList = List(1, 2, 3, 4, 5)
 
-/// Multiplied contains the elements of fullList * 2.
-multiplied = fullList.map((i) -> mult(i, 2))
+/// MultipliedList contains the elements of fullList * 2.
+multipliedList = fullList.map((i) -> mult(i, 2))
 
-/// Filtered contains the elements of fullList filtered.
-filtered = fullList.filter((i) -> i == 3 || i == 5)
+/// FilteredList contains the elements of fullList filtered.
+filteredList = fullList.filter((i) -> i == 3 || i == 5)

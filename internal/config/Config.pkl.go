@@ -26,11 +26,11 @@ type Config struct {
 	// FullList is a list of integers.
 	FullList any `pkl:"fullList"`
 
-	// Multiplied contains the elements of fullList * 2.
-	Multiplied any `pkl:"multiplied"`
+	// MultipliedList contains the elements of fullList * 2.
+	MultipliedList any `pkl:"multipliedList"`
 
-	// Filtered contains the elements of fullList * 2.
-	Filtered any `pkl:"filtered"`
+	// FilteredList contains the elements of fullList filtered.
+	FilteredList any `pkl:"filteredList"`
 }
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a Config
