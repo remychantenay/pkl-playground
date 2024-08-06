@@ -19,3 +19,7 @@ yaml: generate
 .PHONY: json
 json: generate
 	pkl eval -f json -o file-json.json pkl/config.pkl
+
+.PHONY: run
+run: generate
+	go run main.go

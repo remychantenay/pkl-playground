@@ -8,14 +8,20 @@ import (
 )
 
 type Config struct {
-	// Something is just a simple integer.
-	Something int `pkl:"something"`
+	// SomeInteger is just a simple integer.
+	SomeInteger int `pkl:"someInteger"`
 
-	// somethingElse is a simple string.
-	SomethingElse string `pkl:"somethingElse"`
+	// SomeString is a simple string.
+	SomeString string `pkl:"someString"`
 
 	// window contains the window configuration.
 	Window *Window `pkl:"window"`
+
+	// Tabs contains the list of tabs.
+	Tabs any `pkl:"tabs"`
+
+	// Components is a map of components.
+	Components any `pkl:"components"`
 }
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a Config

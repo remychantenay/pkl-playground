@@ -3,11 +3,11 @@ module remychantenay.pkl_playground.internal.config
 
 import "package://pkg.pkl-lang.org/pkl-go/pkl.golang@0.8.0#/go.pkl"
 
-/// Something is just a simple integer.
-something: Int = 42
+/// SomeInteger is just a simple integer.
+someInteger: Int = 42
 
-/// somethingElse is a simple string.
-somethingElse: String = "42"
+/// SomeString is a simple string.
+someString: String = "42"
 
 /// Kind is an "enum" type.
 typealias Kind = "floating" | "fixed"
@@ -26,17 +26,19 @@ class Window {
 
   /// Kind is the kind of window.
   kind: Kind = "floating"
-
-  /// Tabs  contains the list of tabs.
-  local tabs = new Listing<String> {
-    "tab_one"
-    "tab_two"
-  }
 }
 
 /// window contains the window configuration.
 window: Window
 
-// ######################################
-// Types                                #
-// ######################################
+/// Tabs contains the list of tabs.
+tabs = new Listing<String> {
+  "tab_one"
+  "tab_two"
+}
+
+/// Components is a map of components.
+components = new Mapping<String, String> {
+  ["C1"] = "58c2ef10-b7c3-46e6-a757-4217c60e2ce8"
+  ["C2"] = "5c819cbd-9db1-4425-98e7-ea77742a9fa9"
+}

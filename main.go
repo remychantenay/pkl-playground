@@ -2,15 +2,9 @@ package main
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/remychantenay/pkl-playground/internal/config"
-)
-
-const appName = "Cortex"
-
-var (
-	// globalCfg holds the application config.
-	globalCfg *config.Config
 )
 
 func main() {
@@ -23,5 +17,8 @@ func loadConfig() {
 		panic(err)
 	}
 
-	globalCfg = cfg
+	println(fmt.Sprintf("SomeInteger: %d", cfg.SomeInteger))
+	println(fmt.Sprintf("SomeString: %s", cfg.SomeString))
+	println(fmt.Sprintf("Tabs (list): %v", cfg.Tabs))
+	println(fmt.Sprintf("Components (map): %v", cfg.Components))
 }

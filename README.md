@@ -15,3 +15,6 @@ make
 make yaml
 make json
 ```
+
+## Resources
+* [Official docs](https://pkl-lang.org/index.html)
