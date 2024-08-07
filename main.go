@@ -24,4 +24,6 @@ func loadConfig() {
 	println(fmt.Sprintf("FullList (list): %v", cfg.FullList))
 	println(fmt.Sprintf("Multiplied (list): %v", cfg.MultipliedList))
 	println(fmt.Sprintf("Filtered (list): %v", cfg.FilteredList))
+	println(fmt.Sprintf("Reversed (list): %v", cfg.ReversedList))
+	println(fmt.Sprintf("FirstItem: %v", cfg.FirstItem))
 }

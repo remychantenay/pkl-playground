@@ -1,9 +1,43 @@
 {
-  "something": 42,
-  "somethingElse": "42",
+  "someInteger": 42,
+  "someString": "42",
   "window": {
     "width": 1400.0,
     "height": 700.0,
     "kind": "floating"
-  }
+  },
+  "tabs": [
+    "tab_one",
+    "tab_two"
+  ],
+  "components": {
+    "C1": "58c2ef10-b7c3-46e6-a757-4217c60e2ce8",
+    "C2": "5c819cbd-9db1-4425-98e7-ea77742a9fa9"
+  },
+  "fullList": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "multipliedList": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "filteredList": [
+    3,
+    5
+  ],
+  "reversedList": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "firstItem": 1
 }

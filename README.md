@@ -3,17 +3,12 @@
 ## Usage
 ### Set things up
 ```bash
-make prepare
+brew install pkl
+go install github.com/apple/pkl-go/cmd/pkl-gen-go@v0.8.0
 ```
 ### Generate
 ```bash
-make
-```
-
-### Export
-```bash
-make yaml
-make json
+make generate
 ```
 
 ## Resources

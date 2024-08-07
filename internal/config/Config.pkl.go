@@ -31,6 +31,12 @@ type Config struct {
 
 	// FilteredList contains the elements of fullList filtered.
 	FilteredList any `pkl:"filteredList"`
+
+	// ReversedList contains the elements of fullList reversed.
+	ReversedList any `pkl:"reversedList"`
+
+	// FirstItem is the first item of the list.
+	FirstItem any `pkl:"firstItem"`
 }
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a Config

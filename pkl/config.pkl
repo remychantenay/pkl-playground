@@ -55,3 +55,9 @@ multipliedList = fullList.map((i) -> mult(i, 2))
 
 /// FilteredList contains the elements of fullList filtered.
 filteredList = fullList.filter((i) -> i == 3 || i == 5)
+
+/// ReversedList contains the elements of fullList reversed.
+reversedList = fullList.reverse()
+
+/// FirstItem is the first item of the list.
+firstItem = fullList.first
